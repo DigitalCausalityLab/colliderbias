@@ -1,5 +1,5 @@
 # change here is you want to pin R version
-FROM rocker/r-base:latest
+FROM virtualstaticvoid/heroku-docker-r:shiny
 
 # change maintainer here
 LABEL maintainer="Philipp Bach <philipp.bach@uni-hamburg.de>"
