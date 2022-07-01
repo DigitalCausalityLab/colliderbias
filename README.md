@@ -1,29 +1,47 @@
-# Example Shiny App on Heroku
+# Workflow: Deploy Shiny via heroku (on Windows)
 
-This is an example [Shiny][1] application, which uses [heroku-docker-r][2] for Heroku.
+Based on template: https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app, which uses [heroku-docker-r][2] for Heroku.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-You can use this project as a template for creating Shiny application on Heroku. Execute these commands to get started:
+* Register at heroku.com, install herko CLI tool 
+
+* Start a public or private GitHub repository, based on the template 
 
 ```bash
 # get the sources
 git clone https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app.git
 cd heroku-docker-r-shiny-app
 
+
 # optionally, reinitialize git
 rm -rf .git
 git init
 git add --all
 git commit -m "initial"
+```
 
-# create a new heroku application and deploye
+* Modify organization of repo, store app in directory `/app` including files
+    - ui.R
+    - server.R
+    - run.R
+
+
+```bash
+# create a new heroku application and deploy
 heroku create --stack=container
 git push heroku master
 
 # view the application
 heroku open
 ```
+
+
+
+
+
+
+
+------
 
 ## License
 
