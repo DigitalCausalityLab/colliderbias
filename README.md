@@ -2,10 +2,47 @@
 
 Based on template: https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app, which uses [heroku-docker-r][2] for Heroku.
 
+## Register at heroku.com
 
 * Register at heroku.com, install herko CLI tool 
 
-* Start a public or private GitHub repository, based on the template 
+Providing a credit card increases the free dynos
+
+## Git repo for App and Organization
+
+* Start a public or private GitHub repository, based on this template 
+
+* Store app in directory `/app` including files
+    - ui.R
+    - server.R
+    - run.R
+
+
+## Handling R Packages based on `renv`
+
+Install package `renv` via 
+
+```r
+install.packages("renv")
+```
+
+Capture dependencies via
+
+```r
+renvt::init()
+```
+
+This generates a `renv.lock` file that we have to copy paste, i.e., we have include in our 
+`Dockerfile` the following lines
+
+
+
+
+## 
+
+
+_______
+
 
 ```bash
 # get the sources
@@ -20,15 +57,9 @@ git add --all
 git commit -m "initial"
 ```
 
-* Modify organization of repo, store app in directory `/app` including files
-    - ui.R
-    - server.R
-    - run.R
-
-
 ```bash
 # create a new heroku application and deploy
-heroku create --stack=container
+heroku create appname --stack=container
 git push heroku master
 
 # view the application
