@@ -1,7 +1,5 @@
 # example from http://shiny.rstudio.com/gallery/kmeans-example.html
 
-library(shiny)
-
 shinyUI(
   pageWithSidebar(
     headerPanel('Iris k-means clustering'),
