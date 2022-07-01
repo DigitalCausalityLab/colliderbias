@@ -1,0 +1,17 @@
+{
+  "name": "colliderbias",
+  "stack": "container",
+  "description": "This is a Shiny application illustrating collider biases, which uses heroku-docker-r for Heroku.",
+  "keywords": [
+    "r",
+    "shiny"
+  ],
+  "repository": "https://github.com/DigitalCausalityLab/colliderbias",
+  "logo": "https://github.com/DigitalCausalityLab/colliderbias/raw/master/logo.png",
+  "success_url": "/",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
