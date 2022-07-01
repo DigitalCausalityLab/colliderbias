@@ -13,10 +13,10 @@ Providing a credit card increases the free dynos
 * Start a public or private GitHub repository, based on this template 
 
 * Store app in directory `/app` including files
-    - ui.R
-    - server.R
-    - run.R
-
+    - `global.R`: load packages, data etc.
+    - `ui.R`: Define user interface
+    - `server.R`: R operations, like generating plots etc.
+    - `run.R`: Start shiny app
 
 ## Handling R Packages based on `renv`
 
@@ -32,10 +32,7 @@ Capture dependencies via
 renvt::init()
 ```
 
-This generates a `renv.lock` file that we have to copy paste, i.e., we have include in our 
-`Dockerfile` the following lines
-
-
+This generates a `renv.lock` file that we have to copy paste, the `Dockerfile` the following lines
 
 
 ## 
@@ -43,6 +40,13 @@ This generates a `renv.lock` file that we have to copy paste, i.e., we have incl
 
 _______
 
+## Links
+
+* https://github.com/analythium/heroku-shiny
+* https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app
+* https://www.statworx.com/en/content-hub/blog/how-to-dockerize-shinyapps/
+
+____
 
 ```bash
 # get the sources
