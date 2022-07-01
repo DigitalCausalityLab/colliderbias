@@ -4,7 +4,7 @@ FROM virtualstaticvoid/heroku-docker-r:shiny
 #  and execute init.R (if it exists) and restore packrat packages (if they exist)
 
 ## renv.lock file
-COPY /app/renv.lock ./renv.lock
+COPY colliderbias/app/renv.lock ./renv.lock
 
 # install renv & restore packages
 RUN Rscript -e 'install.packages("renv")'
