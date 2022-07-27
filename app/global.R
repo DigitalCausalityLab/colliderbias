@@ -1,3 +1,2 @@
-# example from http://shiny.rstudio.com/gallery/kmeans-example.html
-
-library(shiny)
+rm(list=ls())
+source("R/Packages_Colors.R")
