@@ -93,11 +93,12 @@ heroku open
 
 _______
 
-## Links
+## Helpful Links
 
 * https://github.com/analythium/heroku-shiny
 * https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app
 * https://www.statworx.com/en/content-hub/blog/how-to-dockerize-shinyapps/
+* https://www.youtube.com/watch?v=ARd5IldVFUs
 
 ____
 
