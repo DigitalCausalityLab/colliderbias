@@ -1,6 +1,6 @@
 # Workflow: Deploy Shiny via heroku (on Windows)
 
-Based on template: https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app, which uses [heroku-docker-r][2] for Heroku.
+Based on template: https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app, which uses [heroku-docker-r][2] for Heroku, and https://github.com/STATWORX/blog/blob/master/shinyapp-in-docker.
 
 ## Register at heroku.com
 
