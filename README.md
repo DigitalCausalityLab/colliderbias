@@ -34,6 +34,32 @@ renvt::init()
 
 This generates a `renv.lock` file that we have to copy paste, the `Dockerfile` the following lines
 
+## Working with Docker
+
+Note: It's not really necessary to run docker locally. Instead, it's also enough to set up the Dockerfile in RStudio and then let docker run in a cloud service etc. However, a local installation makes it possible to run and test the app locally.
+
+Docker does not directly work on Windows. Instead it's recommended to install linux locally and run docker there. Go to https://docs.docker.com/desktop/windows/wsl/ for more information.
+
+Install Docker Desktop for windows. Open the Docker Desktop application (only then the `docker ...` commands work in your linux command line).
+
+Open you linux command line and go to the directory of your application.
+
+Type 
+
+```bash
+docker build -t YOURAPP:VERSIONNUMBER .`
+``` 
+
+to build the docker image.
+
+Run the app locally via 
+
+```
+docker run -d --rm -p 8080:8080 YOURAPP
+```
+
+Go to your browser and open the site `localhost:8080` to open the app. It's no problem to change the port to another value of your choice.
+
 
 ## Create a heroku app
 
@@ -67,11 +93,12 @@ heroku open
 
 _______
 
-## Links
+## Helpful Links
 
 * https://github.com/analythium/heroku-shiny
 * https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app
 * https://www.statworx.com/en/content-hub/blog/how-to-dockerize-shinyapps/
+* https://www.youtube.com/watch?v=ARd5IldVFUs
 
 ____
 
