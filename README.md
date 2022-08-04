@@ -1,6 +1,6 @@
 # Workflow: Deploy Shiny via heroku (on Windows)
 
-Based on template: https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app, which uses [heroku-docker-r][2] for Heroku, as well as https://github.com/STATWORX/blog/blob/master/shinyapp-in-docker/
+Based on template: https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app, which uses [heroku-docker-r][2] for Heroku.
 
 ## Register at heroku.com
 
@@ -35,7 +35,34 @@ renvt::init()
 This generates a `renv.lock` file that we have to copy paste, the `Dockerfile` the following lines
 
 
-## 
+## Create a heroku app
+
+* Go to your GitHub repo, if necessary (re)initialize, i.e. open a command like (I work in an Ubuntu partion for windows)
+
+```bash
+# get the sources
+git clone https://github.com/DigitalCausalityLab/colliderbias.git
+cd colliderbias
+
+
+# optionally, reinitialize git
+rm -rf .git
+git init
+git add --all
+git commit -m "initial"
+```
+
+* Create a new heroku app and provide a name (placeholder `appname`)
+
+```bash
+# create a new heroku application and deploy
+heroku create appname --stack=container --region eu
+git push heroku master
+
+# view the application
+heroku open
+```
+
 
 
 _______
@@ -59,15 +86,6 @@ rm -rf .git
 git init
 git add --all
 git commit -m "initial"
-```
-
-```bash
-# create a new heroku application and deploy
-heroku create appname --stack=container
-git push heroku master
-
-# view the application
-heroku open
 ```
 
 

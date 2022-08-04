@@ -1,18 +1,20 @@
 #Loading the required packages ####
-packages <- c("shiny","ggplot2", "EnvStats", "shinyWidgets","shinydashboard",
-              "latex2exp","dplyr", "plotly","MASS", "mvtnorm",
-              "data.table", "RColorBrewer", "knitr",
-              "gtsummary", "gt", "ggdag", "dagitty")
+library("shiny")
+library("ggplot2")
+library("shinyWidgets")
+library("shinydashboard")
+library("dplyr")
+library("plotly")
+library("data.table")
+library("RColorBrewer")
+library("knitr")
+library("rmarkdown")
+library("gtsummary")
+library("gt")
+library("ggdag")
+library("dagitty")
 
-#installing new packages
-if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
-  install.packages(setdiff(packages, rownames(installed.packages())))
-}
-# load and attach packages
-if (length(setdiff(packages,names(sessionInfo()$otherPkgs))) > 0) {
-lapply(setdiff(packages,names(sessionInfo()$otherPkgs)),
-       require, character.only = TRUE)
-}
+
 
 #defining certain colors and methods ####
 dashboard_skin <- "black"
@@ -74,12 +76,3 @@ background-color: #ff69b4;
 background-color: #EAEDED;
 }'
 
-
-# Colors for plot
-col_palette = RColorBrewer::brewer.pal(9,"Spectral")
-colors = c("Non-orthogonal ML with sample splitting" = col_palette[1],
-           "Double ML (no sample splitting)" = col_palette[2],
-           "Non-orthogonal ML (no sample splitting)" = col_palette[3],
-           "DoubleML with underfitting learner and cross-fitting" = col_palette[4],
-           "DoubleML without cross-fitting" = col_palette[8],
-           "DoubleML with cross-fitting" = col_palette[9])
