@@ -10,4 +10,4 @@ We appreciate your feedback! Please open an issue and/or contact [Philipp Bach](
 
 # References
 
-Cunningham, Scott. "Causal inference." Causal Inference. Yale University Press, 2021.
+Cunningham, Scott. "Causal inference." *Causal Inference*. Yale University Press, 2021.
