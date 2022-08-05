@@ -89,6 +89,11 @@ git push heroku master
 heroku open
 ```
 
+## Deploy App with GitHub actions
+
+It's also possible to deploy the Shiny App via Heroku using GitHub Actions, see https://github.com/marketplace/actions/deploy-to-heroku . 
+
+
 
 
 _______
@@ -99,7 +104,7 @@ _______
 * https://github.com/virtualstaticvoid/heroku-docker-r-shiny-app
 * https://www.statworx.com/en/content-hub/blog/how-to-dockerize-shinyapps/
 * https://www.youtube.com/watch?v=ARd5IldVFUs
-
+* https://github.com/marketplace/actions/deploy-to-heroku
 ____
 
 ```bash
