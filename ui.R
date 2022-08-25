@@ -18,40 +18,28 @@ shinyUI(
     # Adjust Body of Dashboard
     dashboardBody(
       # Layout option defined in "R/Packages_Colors.R"
-      tags$head(tags$style(HTML("
-
-
-.box.box-solid.box-primary>.box-header {
-  color:#fff;
-  background:#000000
-                    }
-
-.box.box-solid.box-primary{
-border-bottom-color:#000000;
-border-left-color:#000000;
-border-right-color:#000000;
-border-top-color:#000000;
-}
-
-                                    "),
-                           HTML("
-
-
-.box.box-solid.box-success>.box-header {
-  color:#000000;
-  background:#ffda3e
-                    }
-
-.box.box-solid.box-success{
-border-bottom-color:#ffda3e;
-border-left-color:#ffda3e;
-border-right-color:#ffda3e;
-border-top-color:#ffda3e;
-}
-
-                                    ")
-      )),
-
+      tags$head(tags$style(HTML(
+        ".box.box-solid.box-primary>.box-header {
+        color:#fff;
+        background:#000000
+        }
+        .box.box-solid.box-primary{
+        border-bottom-color:#000000;
+        border-left-color:#000000;
+        border-right-color:#000000;
+        border-top-color:#000000;
+        }"),
+        HTML("
+        .box.box-solid.box-success>.box-header {
+        color:#000000;
+        background:#ffda3e
+        }
+        .box.box-solid.box-success{
+        border-bottom-color:#ffda3e;
+        border-left-color:#ffda3e;
+        border-right-color:#ffda3e;
+        border-top-color:#ffda3e;
+        }"))),
       # Layout for math formula
       withMathJax(),
       # Layout option defined in "R/Packages_Colors.R"
