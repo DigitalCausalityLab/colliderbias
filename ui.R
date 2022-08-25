@@ -13,7 +13,7 @@ shinyUI(
         # of the 'tabItem' below
         menuItem("Collider App", tabName = "collider", icon = icon("project-diagram")),
         menuItem("Code", tabName = "code", icon = icon("github")),
-                menuItem("References", tabName = "references", icon = icon("book")))
+        menuItem("References", tabName = "references", icon = icon("book")))
     ),
     # Adjust Body of Dashboard
     dashboardBody(
@@ -69,22 +69,22 @@ border-top-color:#ffda3e;
                 fluidRow(
                   box(
                     fluidRow(
-                    box(
-                      title = "Options", solidHeader = TRUE, status = boxcol_1,
-                      checkboxInput("moviestar",
-                                    "Show movie stars only",
-                                    value = FALSE),
-                      checkboxInput("regression_line",
-                                    "Show regression line",
-                                    value = TRUE),
-                      width = 12),
-                    box(
-                      title = "Regression Output", solidHeader = TRUE, status = boxcol_1,
-                      p("Output from a linear regression of the variable 'beauty' on 'talent' based on the simulated data set."),
-                      gt_output("regression_tbl"),
-                      width = 12)),
+                      box(
+                        title = "Options", solidHeader = TRUE, status = boxcol_1,
+                        checkboxInput("moviestar",
+                                      "Show movie stars only",
+                                      value = FALSE),
+                        checkboxInput("regression_line",
+                                      "Show regression line",
+                                      value = TRUE),
+                        width = 12),
+                      box(
+                        title = "Regression Output", solidHeader = TRUE, status = boxcol_1,
+                        p("Output from a linear regression of the variable 'beauty' on 'talent' based on the simulated data set."),
+                        gt_output("regression_tbl"),
+                        width = 12)),
                     width = 4
-                    ),
+                  ),
 
                   box(
                     title = "Scatter Plot", solidHeader = TRUE, status = boxcol_2,
@@ -103,17 +103,17 @@ border-top-color:#ffda3e;
                 h2("Code"),
                 p("The code is available at the GitHub repository",
                   tags$a("https://github.com/DigitalCausalityLab/colliderbias.", href="https://github.com/DigitalCausalityLab/colliderbias")
-                  ),
+                ),
                 p("In case you find a bug or have suggestion for improvements, please open an issue in",
                   tags$a("GitHub.", href = "https://github.com/DigitalCausalityLab/colliderbias/issues")
-                  )
-                ),
+                )
+        ),
         tabItem(tabName = "references",
                 h2("References"),
                 p("Cunningham, Scott. “Causal inference.” Causal Inference. Yale University Press, 2021, Section 3.6.1., available", tags$a("online.", href = "https://mixtape.scunning.com/")),
                 p("Piazza, Jo. 2009. “Megan Fox Voted Worst - but Sexiest - Actress of 2009.”",
-                tags$a("https://marquee.blogs.cnn.com/2009/12/30/megan-fox-voted-worst-but-sexiest-actress-of-2009/",
-                       href = "https://marquee.blogs.cnn.com/2009/12/30/megan-fox-voted-worst-but-sexiest-actress-of-2009/")
+                  tags$a("https://marquee.blogs.cnn.com/2009/12/30/megan-fox-voted-worst-but-sexiest-actress-of-2009/",
+                         href = "https://marquee.blogs.cnn.com/2009/12/30/megan-fox-voted-worst-but-sexiest-actress-of-2009/")
                 )
         )
       )
