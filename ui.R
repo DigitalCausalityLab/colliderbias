@@ -79,7 +79,7 @@ border-top-color:#ffda3e;
                                       value = TRUE),
                         width = 12),
                       box(
-                        title = "Regression Output", solidHeader = TRUE, status = boxcol_1,
+                        title = "Regression Output", solidHeader = TRUE, status = boxcol_2,
                         p("Output from a linear regression of the variable 'beauty' on 'talent' based on the simulated data set."),
                         gt_output("regression_tbl"),
                         width = 12)),
