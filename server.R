@@ -37,4 +37,12 @@ shinyServer(function(input, output) {
     }
     reg_output
   })
+
+  # Code to keep app alive after timeout (Heroku timeout after ca. 55 seconds)
+  autoInvalidate <- reactiveTimer(10000)
+  observe({
+    autoInvalidate()
+    cat(".")
+  })
+
 })
