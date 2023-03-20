@@ -12,7 +12,7 @@ shinyUI(
         # Watch out for `tabName`: Must be matched by definition
         # of the 'tabItem' below
         menuItem("Collider App", tabName = "collider", icon = icon("project-diagram")),
-        menuItem("Code", tabName = "code", icon = icon("github")),
+        menuItem("Code", tabName = "code", icon = icon("code")),
         menuItem("References", tabName = "references", icon = icon("book")))
     ),
     # Adjust Body of Dashboard
