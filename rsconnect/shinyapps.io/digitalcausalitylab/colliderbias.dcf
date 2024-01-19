@@ -1,0 +1,13 @@
+name: colliderbias
+title: colliderbias
+username: digitalcausalitylab
+account: digitalcausalitylab
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10970296
+bundleId: 8161407
+url: https://digitalcausalitylab.shinyapps.io/colliderbias/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Dockerfile|heroku.yml
